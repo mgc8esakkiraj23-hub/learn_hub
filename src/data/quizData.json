@@ -1,0 +1,506 @@
+{
+  "react": [
+    {
+      "q": "What is useState in React?",
+      "options": ["A Hook to manage state in functional components", "A function to fetch data from an API", "A CSS styling utility", "A database connector"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "useState is a built-in React Hook that lets functional components hold and update local state."
+    },
+    {
+      "q": "What does the useEffect Hook do?",
+      "options": ["Runs side effects after render", "Creates new state variables", "Defines a route", "Styles a component"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "useEffect runs side-effect logic (data fetching, subscriptions, DOM changes) after the component renders."
+    },
+    {
+      "q": "How do you pass data from a parent to a child component?",
+      "options": ["Using props", "Using CSS classes", "Using HTML attributes only", "Using localStorage"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Props are the standard mechanism for passing data down the component tree from parent to child."
+    },
+    {
+      "q": "What is the Virtual DOM?",
+      "options": ["An in-memory representation of the real DOM", "A physical hardware device", "A CSS framework", "A database table"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The Virtual DOM is a lightweight in-memory copy of the real DOM that React diffs to minimize real DOM updates."
+    },
+    {
+      "q": "Which method is used to render a React app to the browser?",
+      "options": ["createRoot().render()", "document.write()", "ReactDOM.html()", "window.render()"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "In React 18+, createRoot(container).render(<App />) mounts the app into the DOM."
+    },
+    {
+      "q": "What is a 'key' prop used for in lists?",
+      "options": ["Helping React identify which items changed", "Encrypting list data", "Styling list items", "Sorting the list"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Keys give React a stable identity for each list item so it can efficiently update, add, and remove elements."
+    },
+    {
+      "q": "What does JSX stand for?",
+      "options": ["JavaScript XML", "Java Syntax Extension", "JSON XML", "Just Standard XML"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "JSX is a syntax extension that lets you write HTML-like markup inside JavaScript."
+    },
+    {
+      "q": "Which Hook lets you access context values?",
+      "options": ["useContext", "useContextValue", "useProvider", "useStore"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "useContext reads the current value of a Context and triggers re-render when it changes."
+    },
+    {
+      "q": "What happens when a component's state changes?",
+      "options": ["React re-renders the component", "The page reloads entirely", "The server is contacted", "Nothing changes"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "State changes trigger React to re-render the affected component and its children."
+    },
+    {
+      "q": "What is prop drilling?",
+      "options": ["Passing props through multiple levels of components", "Deleting props from a component", "A CSS technique for props", "A way to encrypt props"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Prop drilling is passing data through many nested components, which Context API can help avoid."
+    }
+  ],
+  "nodejs": [
+    {
+      "q": "What is Node.js?",
+      "options": ["A JavaScript runtime built on Chrome's V8 engine", "A frontend styling library", "A CSS preprocessor", "A relational database"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Node.js is a server-side JavaScript runtime built on the V8 JavaScript engine."
+    },
+    {
+      "q": "Which module is used to create an HTTP server in Node.js?",
+      "options": ["http", "url", "fs", "path"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The built-in 'http' module provides the tools to create HTTP servers and clients."
+    },
+    {
+      "q": "What is npm?",
+      "options": ["Node Package Manager for installing libraries", "A new programming language", "A CSS framework", "A database system"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "npm (Node Package Manager) installs and manages JavaScript packages from the npm registry."
+    },
+    {
+      "q": "What does the 'require' function do?",
+      "options": ["Imports a module into the current file", "Deletes a file", "Starts a server", "Styles a page"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "In CommonJS, require() loads and returns a module's exports."
+    },
+    {
+      "q": "What is the event loop in Node.js?",
+      "options": ["A mechanism that handles async operations in a single thread", "A loop that renders UI", "A database query loop", "A CSS animation loop"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The event loop lets Node.js perform non-blocking I/O by offloading operations and processing callbacks."
+    },
+    {
+      "q": "Which built-in module is used to work with the file system?",
+      "options": ["fs", "file", "os", "sys"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The 'fs' (file system) module provides methods to read, write, and manipulate files."
+    },
+    {
+      "q": "What is Express.js?",
+      "options": ["A minimal web application framework for Node.js", "A frontend React library", "A database engine", "A CSS tool"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Express is a fast, minimal Node.js web framework for building APIs and web apps."
+    },
+    {
+      "q": "What does 'process.exit()' do?",
+      "options": ["Terminates the Node.js process", "Starts a new process", "Restarts the server", "Pauses execution"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "process.exit() forces the current Node.js process to stop immediately."
+    },
+    {
+      "q": "What is a Buffer in Node.js?",
+      "options": ["A chunk of binary data in memory", "A UI component", "A CSS property", "A network protocol"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A Buffer represents a fixed-size chunk of binary data, used for reading streams and files."
+    },
+    {
+      "q": "How does Node.js handle concurrency despite being single-threaded?",
+      "options": ["Via the event loop and non-blocking I/O", "By creating a new thread per request", "By using multiple CPUs automatically", "It cannot handle concurrency"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Node.js uses an event loop with non-blocking asynchronous I/O to handle many concurrent operations on one thread."
+    }
+  ],
+  "python": [
+    {
+      "q": "What is __init__ in Python?",
+      "options": ["The constructor method called when an object is created", "A destructor method", "A normal function", "A module-level variable"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "__init__ is the initializer method invoked automatically when a new instance of a class is created."
+    },
+    {
+      "q": "Which keyword defines a function in Python?",
+      "options": ["def", "function", "fn", "func"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The 'def' keyword is used to define a function in Python."
+    },
+    {
+      "q": "What is a list in Python?",
+      "options": ["An ordered, mutable collection", "An immutable collection", "A key-value mapping", "A set of unique items only"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A list is an ordered, mutable sequence that can hold items of different types."
+    },
+    {
+      "q": "How do you start a comment in Python?",
+      "options": ["With the # symbol", "With //", "With /* */", "With <!-- -->"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "In Python, single-line comments begin with the # character."
+    },
+    {
+      "q": "What does the len() function return?",
+      "options": ["The number of items in an object", "The largest item", "The sum of items", "The type of an object"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "len() returns the length (number of items) of a sequence or collection."
+    },
+    {
+      "q": "Which data structure stores unique, unordered items?",
+      "options": ["set", "list", "tuple", "dict"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A set is an unordered collection of unique elements."
+    },
+    {
+      "q": "What is a tuple?",
+      "options": ["An ordered, immutable sequence", "A mutable sequence", "A key-value store", "A function type"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A tuple is an ordered, immutable collection of items."
+    },
+    {
+      "q": "Which keyword handles exceptions in Python?",
+      "options": ["try / except", "try / catch", "begin / rescue", "do / while"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Python uses try/except blocks to catch and handle exceptions."
+    },
+    {
+      "q": "What is pip?",
+      "options": ["The Python package installer", "A Python web framework", "A built-in data type", "A testing library"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "pip is the standard package installer for Python, used to install libraries from PyPI."
+    },
+    {
+      "q": "What does the 'self' parameter refer to in a method?",
+      "options": ["The current instance of the class", "The parent class", "A global variable", "A module name"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "'self' refers to the instance on which the method is called, giving access to its attributes and methods."
+    }
+  ],
+  "java": [
+    {
+      "q": "What are the 4 pillars of OOP?",
+      "options": ["Encapsulation, Abstraction, Inheritance, Polymorphism", "Only Inheritance", "Classes and Objects only", "Compilation and Execution"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The four core OOP pillars are Encapsulation, Abstraction, Inheritance, and Polymorphism."
+    },
+    {
+      "q": "Which keyword is used to inherit a class in Java?",
+      "options": ["extends", "inherits", "implements", "super"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The 'extends' keyword is used to create a subclass that inherits from a parent class."
+    },
+    {
+      "q": "What is the entry point of a Java program?",
+      "options": ["public static void main(String[] args)", "start()", "run()", "init()"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The JVM starts execution at the main method: public static void main(String[] args)."
+    },
+    {
+      "q": "Which keyword prevents a method from being overridden?",
+      "options": ["final", "static", "private", "abstract"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A 'final' method cannot be overridden by subclasses."
+    },
+    {
+      "q": "What is the JVM?",
+      "options": ["Java Virtual Machine that executes bytecode", "A Java compiler", "A database", "A web browser"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The JVM (Java Virtual Machine) runs compiled Java bytecode, enabling platform independence."
+    },
+    {
+      "q": "Which collection stores unique elements only?",
+      "options": ["Set", "List", "ArrayList", "Queue"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A Set does not allow duplicate elements."
+    },
+    {
+      "q": "What does the 'static' keyword mean?",
+      "options": ["Belongs to the class, not an instance", "Belongs to one instance only", "A private variable", "A constant loop"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A static member belongs to the class itself rather than to any specific instance."
+    },
+    {
+      "q": "Which keyword is used to implement an interface?",
+      "options": ["implements", "extends", "inherits", "using"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The 'implements' keyword is used when a class implements an interface."
+    },
+    {
+      "q": "What is an abstract class?",
+      "options": ["A class that cannot be instantiated and may have abstract methods", "A class with only static methods", "A final class", "A private class"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "An abstract class cannot be instantiated and can declare abstract methods that subclasses must implement."
+    },
+    {
+      "q": "Which package contains the Scanner class?",
+      "options": ["java.util", "java.io", "java.lang", "java.scanner"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Scanner is part of the java.util package and is used to parse input."
+    }
+  ],
+  "javascript": [
+    {
+      "q": "What is a closure in JavaScript?",
+      "options": ["A function with access to its outer function's scope", "A way to close a browser tab", "A CSS rule", "A database connection"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A closure is a function that remembers variables from the scope in which it was created."
+    },
+    {
+      "q": "Which keyword declares a block-scoped variable?",
+      "options": ["let", "var", "function", "return"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "'let' declares a block-scoped local variable, unlike 'var' which is function-scoped."
+    },
+    {
+      "q": "What does '===' check for?",
+      "options": ["Strict equality of value and type", "Only value equality", "Only type equality", "Reference inequality"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The strict equality operator '===' compares both value and type without coercion."
+    },
+    {
+      "q": "What is a Promise?",
+      "options": ["An object representing a future value", "A type of loop", "A CSS feature", "A DOM element"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A Promise represents the eventual result of an asynchronous operation."
+    },
+    {
+      "q": "Which method converts a JSON string to an object?",
+      "options": ["JSON.parse()", "JSON.stringify()", "JSON.convert()", "JSON.toObject()"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "JSON.parse() transforms a JSON string into a JavaScript object."
+    },
+    {
+      "q": "What does the 'this' keyword refer to inside an arrow function?",
+      "options": ["The enclosing lexical scope's 'this'", "The global object always", "A new empty object", "The function itself"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Arrow functions do not bind their own 'this'; they inherit it from the surrounding lexical scope."
+    },
+    {
+      "q": "Which method adds an item to the end of an array?",
+      "options": ["push()", "pop()", "shift()", "unshift()"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "push() appends one or more elements to the end of an array."
+    },
+    {
+      "q": "What is hoisting?",
+      "options": ["Moving declarations to the top of their scope before execution", "A CSS layout technique", "A server-side process", "A way to sort arrays"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "Hoisting moves variable and function declarations to the top of their scope during the compile phase."
+    },
+    {
+      "q": "What does 'async/await' help with?",
+      "options": ["Writing asynchronous code that reads synchronously", "Creating loops", "Styling HTML", "Querying a database directly"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "async/await syntax lets you write Promise-based asynchronous code in a cleaner, linear style."
+    },
+    {
+      "q": "Which operator is used for optional chaining?",
+      "options": ["?.", "::", "??", "#."],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The optional chaining operator '?.' safely accesses nested properties without throwing if an intermediate is null/undefined."
+    }
+  ],
+  "sql": [
+    {
+      "q": "What is a PRIMARY KEY?",
+      "options": ["A unique identifier for each row in a table", "A duplicate column", "A foreign reference", "An index name"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A primary key uniquely identifies each record in a table and cannot contain NULL values."
+    },
+    {
+      "q": "Which SQL keyword filters rows returned by a query?",
+      "options": ["WHERE", "FROM", "ORDER BY", "GROUP BY"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "The WHERE clause filters rows based on a specified condition."
+    },
+    {
+      "q": "What does the JOIN clause do?",
+      "options": ["Combines rows from two or more tables", "Deletes rows", "Creates a new database", "Sorts results"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "JOIN combines columns from related rows across two or more tables based on a relationship."
+    },
+    {
+      "q": "Which keyword is used to insert new data?",
+      "options": ["INSERT INTO", "ADD ROW", "PUT", "CREATE"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "INSERT INTO adds new rows to a table."
+    },
+    {
+      "q": "What does the SELECT statement do?",
+      "options": ["Retrieves data from a database", "Deletes a table", "Creates a user", "Stops the server"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "SELECT retrieves rows from one or more tables in a database."
+    },
+    {
+      "q": "Which clause groups rows that share a value?",
+      "options": ["GROUP BY", "ORDER BY", "WHERE", "HAVING"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "GROUP BY arranges rows with the same values into summary rows, often used with aggregates."
+    },
+    {
+      "q": "What does a FOREIGN KEY enforce?",
+      "options": ["Referential integrity between tables", "Uniqueness within one table", "A default value", "A sort order"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A foreign key links a row to a primary key in another table, enforcing referential integrity."
+    },
+    {
+      "q": "Which command removes all rows but keeps the table structure?",
+      "options": ["TRUNCATE", "DROP", "DELETE TABLE", "REMOVE"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "TRUNCATE deletes all rows quickly while keeping the table structure intact."
+    },
+    {
+      "q": "What does the COUNT() function return?",
+      "options": ["The number of rows matching a query", "The sum of numeric values", "The highest value", "The average value"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "COUNT() returns the number of rows that match a specified condition."
+    },
+    {
+      "q": "Which keyword sorts the result set?",
+      "options": ["ORDER BY", "SORT BY", "ARRANGE", "GROUP SORT"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "ORDER BY sorts the result set by one or more columns in ascending or descending order."
+    }
+  ],
+  "git": [
+    {
+      "q": "What does 'git init' do?",
+      "options": ["Initializes a new Git repository", "Deletes a repository", "Commits changes", "Pushes to a remote"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git init creates a new empty Git repository in the current directory by adding a .git folder."
+    },
+    {
+      "q": "Which command stages changes for the next commit?",
+      "options": ["git add", "git push", "git pull", "git clone"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git add moves changes from the working directory into the staging area."
+    },
+    {
+      "q": "What does 'git commit -m' do?",
+      "options": ["Records staged changes with a message", "Uploads to a remote", "Creates a branch", "Merges branches"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git commit -m saves a snapshot of the staged changes with a descriptive message."
+    },
+    {
+      "q": "Which command uploads local commits to a remote repository?",
+      "options": ["git push", "git pull", "git fetch", "git merge"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git push sends local commits to a remote branch."
+    },
+    {
+      "q": "What does 'git clone' do?",
+      "options": ["Copies a remote repository to your machine", "Deletes a local repo", "Merges two repos", "Creates a branch"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git clone downloads a full copy of a remote repository, including its history."
+    },
+    {
+      "q": "Which command creates and switches to a new branch?",
+      "options": ["git checkout -b", "git branch -d", "git merge", "git switch -d"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git checkout -b <name> creates a new branch and moves to it in one step."
+    },
+    {
+      "q": "What does 'git status' show?",
+      "options": ["The current state of the working directory and staging area", "The commit history", "Remote URLs only", "The Git version"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git status displays which files are staged, modified, or untracked."
+    },
+    {
+      "q": "What is a merge conflict?",
+      "options": ["When two branches change the same lines and Git can't auto-merge", "When a commit fails to save", "When a repo is deleted", "When a push is rejected for size"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "A merge conflict occurs when competing changes block an automatic merge and must be resolved manually."
+    },
+    {
+      "q": "Which command views the commit history?",
+      "options": ["git log", "git history", "git show-all", "git list"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git log displays the commit history of the current branch."
+    },
+    {
+      "q": "What does 'git pull' do?",
+      "options": ["Fetches and merges changes from a remote branch", "Only fetches without merging", "Deletes a remote branch", "Creates a new tag"],
+      "answer": 0,
+      "marks": 10,
+      "explanation": "git pull runs git fetch followed by a merge, bringing remote changes into the current branch."
+    }
+  ]
+}
